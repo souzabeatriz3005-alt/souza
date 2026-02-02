@@ -1,6 +1,6 @@
 // Define os coeficientes da equação do segundo grau
 // Equação: 5x² - 6x + 2 = 0
-const a = 4, b = -6, c = 2;
+const a = 5, b = -6, c = 2;
 
 // Calcula o valor de delta (b² - 4ac)
 const delta = Math.pow(b, 2) - (4 * a * c);
