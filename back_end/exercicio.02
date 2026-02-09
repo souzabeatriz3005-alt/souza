@@ -1,0 +1,143 @@
+**1.** O que é o **Node.js**?
+Explique sua finalidade e por que ele é considerado um ambiente de execução e não uma linguagem de programação.
+O Node.js é um ambiente de execução de JavaScript fora do navegador.
+
+Ele é considerado um ambiente de execução porque seu papel é executar código JavaScript, fornecendo recursos como acesso ao sistema de arquivos, rede e processos do sistema operacional.
+
+Ele não é uma linguagem de programação porque utiliza a linguagem JavaScript, que já existe independentemente do Node.js.
+
+
+
+**2.** Qual a diferença entre **Node.js** e **JavaScript executado no navegador**?
+Cite pelo menos **duas diferenças**.
+Algumas diferenças importantes:
+
+Ambiente de execução
+
+No navegador: JavaScript roda dentro do browser (Chrome, Firefox etc.)
+
+No Node.js: JavaScript roda no servidor ou no terminal
+
+Acesso a recursos
+
+Navegador: acesso limitado por segurança (DOM, eventos da página)
+
+Node.js: acesso ao sistema de arquivos, rede, processos, banco de dados
+
+
+
+**3.** O que é o **V8 Engine** e qual sua importância para o funcionamento do Node.js?
+O V8 Engine é o motor JavaScript criado pelo Google, usado no navegador Chrome e no Node.js.
+
+Ele é importante porque:
+
+Converte JavaScript em código de máquina
+
+Permite alta performance
+
+É responsável por executar o JavaScript no Node.js
+
+
+
+**4.** Explique o conceito de **I/O não bloqueante** no Node.js.
+Por que isso melhora o desempenho de aplicações?
+I/O não bloqueante significa que operações demoradas (como leitura de arquivos ou requisições de rede) não travam a execução do programa.
+
+Enquanto uma operação é processada, o Node.js continua atendendo outras requisições.
+Isso melhora o desempenho porque:
+
+Usa menos recursos
+
+Atende muitas conexões ao mesmo tempo
+
+É ideal para aplicações em tempo real
+
+
+
+**5.** O que é o **Event Loop**?
+Descreva, de forma resumida, como ele funciona.
+O Event Loop é o mecanismo que permite ao Node.js executar código de forma assíncrona, mesmo usando uma única thread.
+
+De forma resumida:
+
+Ele monitora a fila de eventos
+
+Executa callbacks quando operações assíncronas são concluídas
+
+Mantém a aplicação funcionando sem bloqueios
+
+
+
+**6.** O que são **módulos** no Node.js?
+Explique a diferença entre:
+
+* Módulos internos
+* Módulos externos
+* Módulos criados pelo desenvolvedor
+Módulos são partes de código reutilizáveis.
+
+Tipos de módulos:
+
+Módulos internos
+Já vêm com o Node.js (ex: fs, http, path)
+
+Módulos externos
+São instalados via npm (ex: express, axios)
+
+Módulos do desenvolvedor
+Criados pelo próprio programador dentro do projeto
+
+
+
+**7.** Para que serve o arquivo **package.json** em um projeto Node.js?
+Cite pelo menos **três informações** que ele pode conter.
+O package.json armazena as informações e configurações do projeto.
+
+Ele pode conter, por exemplo:
+
+Nome e versão do projeto
+
+Dependências
+
+Scripts (ex: start, test)
+
+Descrição e autor
+
+
+**8.** O que é o **npm**?
+Explique sua função no desenvolvimento de aplicações Node.js.
+O npm (Node Package Manager) é o gerenciador de pacotes do Node.js.
+
+Ele serve para:
+
+Instalar bibliotecas
+
+Gerenciar dependências
+
+Executar scripts
+
+Compartilhar pacotes
+
+
+
+
+**9.** O que é uma **API REST** e como o Node.js pode ser usado para desenvolvê-la?
+Uma API REST é uma interface que permite comunicação entre sistemas usando o protocolo HTTP.
+
+Com Node.js, é possível criar APIs REST usando frameworks como Express, definindo rotas, métodos HTTP (GET, POST, PUT, DELETE) e retornando dados geralmente em JSON.
+
+
+
+
+**10.** Cite **duas vantagens** e **duas desvantagens** do uso do Node.js em aplicações web.
+Vantagens:
+
+Alto desempenho com I/O não bloqueante
+
+Uso da mesma linguagem no front-end e back-end
+
+Desvantagens:
+
+Não é ideal para tarefas muito pesadas de CPU
+
+Código assíncrono pode ser mais complexo de manter
