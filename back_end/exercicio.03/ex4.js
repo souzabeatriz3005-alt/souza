@@ -2,4 +2,4 @@
 for (let i = 100; i > -1; i-=5) {
     // i++ é o incremento que evita o loop infinito
     console.log(`Contagem: ${i}`);
-}
+}   console.log(`Acabou`) 
