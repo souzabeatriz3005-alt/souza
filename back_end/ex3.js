@@ -2,4 +2,4 @@
 for (let i = 0; i < 19; i+=3) {
     // i++ é o incremento que evita o loop infinito
     console.log(`Contagem: ${i}`);
-}
+}   console.log(`Acabou`)
